@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+</head>
+<body>
+    <h1 id="heading">Witaj na mojej stronie!!!</h1>
+    <img src="static/portret.jfif">
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
